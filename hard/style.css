@@ -1,0 +1,26 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+}
+
+#container {
+    justify-content: center;
+    text-align: center;
+}
+
+#name:focus:invalid, #ssn:focus:invalid {
+    border: 1px solid red;
+    outline: none;
+}
+
+#name:valid, #ssn:valid {
+    border: 1px solid green;
+    outline: none;
+}

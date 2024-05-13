@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section id="container">
+        <h3>INPUT INFORMATION:</h3>
+        <form name="info" onsubmit="return form()">
+            <input id="name" class="input" type="text" name="name" placeholder="Name" pattern="[^0-9]{1,50}">
+            <input id="ssn" class="input" type="text" name="ssn" placeholder="xxxxxxxxx" pattern="[0-9]{9}">
+            <input type="submit" id="btn" value="Submit"></input>
+        </form>
+    </section>
     
     <script src="script.js"></script>
 </body>
