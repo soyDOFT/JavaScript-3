@@ -30,6 +30,7 @@ function sharePizza() {
 
     function sharePizza(slices, people) {
         //Display how many slices each person gets
-        return `Each person gets ${slices / people} slices of pizza; from our ${slices} slice pizza`;
+        const result = slices / people;
+        return `Each person gets ${result.toFixed(2)} slices of pizza; from our ${slices} slice pizza`;
     }
 }
